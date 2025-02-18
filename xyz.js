@@ -26,14 +26,7 @@ const coordinates = [
     memo: "바스티온",
     type: "nether",
   },
-  {
-    name: "엔더 드래곤",
-    x: 10,
-    y: 100,
-    z: -10,
-    memo: "엔더 드래곤의 자취",
-    type: "end",
-  },
+  
 ];
 
 // 테이블을 동적으로 생성하는 함수
@@ -47,21 +40,17 @@ function renderCoordinates() {
   netherTableBody.innerHTML = "";
   endTableBody.innerHTML = "";
 
-  // 좌표 데이터를 순회하며 테이블에 추가
+  // 좌표 데이터를 반복하여 테이블에 추가
   coordinates.forEach((coord) => {
     const row = document.createElement("tr");
 
+    // 테이블 행에 데이터 추가
     row.innerHTML = `
-        <td class="px-6 py-4 whitespace-nowrap">${coord.name}</td>
-        <td class="px-6 py-4">${coord.x}</td>
-        <td class="px-6 py-4">${coord.y}</td>
-        <td class="px-6 py-4">${coord.z}</td>
-        <td class="px-6 py-4">
-<button class="copy-btn text-sm px-3 py-2 bg-black text-white rounded-lg hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-500">
-  복사
-</button>
-        </td>
-      `;
+      <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">${coord.name}</td>
+      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">${coord.x}</td>
+      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">${coord.y}</td>
+      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">${coord.z}</td>
+    `;
 
     // 좌표의 타입에 따라 해당하는 테이블에 추가
     if (coord.type === "overworld") {
@@ -71,15 +60,6 @@ function renderCoordinates() {
     } else if (coord.type === "end") {
       endTableBody.appendChild(row);
     }
-
-    // 복사 버튼 클릭 이벤트 리스너 추가
-    const copyButton = row.querySelector(".copy-btn");
-    copyButton.addEventListener("click", () => {
-      const coordData = `이름: ${coord.name}, X: ${coord.x}, Y: ${coord.y}, Z: ${coord.z}`;
-      navigator.clipboard.writeText(coordData).then(() => {
-        alert("좌표가 클립보드에 복사되었습니다.");
-      });
-    });
   });
 }
 
