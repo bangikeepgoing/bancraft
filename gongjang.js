@@ -42,16 +42,17 @@ document.addEventListener("DOMContentLoaded", function () {
     container.innerHTML += factoryCard;
   });
 
-  // 진행률에 따라 색상을 다르게 반환하는 함수
-  function getStatusClass(progress) {
-    if (progress === 100) {
-      return "bg-green-100 text-green-800";
-    } else if (progress === 50) {
-      return "bg-yellow-100 text-yellow-800";
-    } else {
-      return "bg-red-100 text-red-800";
-    }
+// 진행률에 따라 색상을 다르게 반환하는 함수
+function getStatusClass(progress) {
+  if (progress === 100) {
+    return "bg-black text-white"; // 개발완료
+  } else if (progress >= 50) {
+    return "bg-gray-400 text-white"; // 개발중
+  } else {
+    return "bg-white text-gray-800"; // 미개발
   }
+}
+
 
   // 진행 상태에 따른 텍스트 반환 함수
   function getStatusText(progress) {
