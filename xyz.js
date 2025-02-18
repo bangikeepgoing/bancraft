@@ -26,7 +26,6 @@ const coordinates = [
     memo: "바스티온",
     type: "nether",
   },
-  
 ];
 
 // 테이블을 동적으로 생성하는 함수

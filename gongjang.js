@@ -46,22 +46,21 @@ document.addEventListener("DOMContentLoaded", function () {
   function getStatusClass(progress) {
     if (progress === 100) {
       return "bg-black text-white"; // 개발완료
-    } else if (progress >= 50) {
+    } else if (progress > 0) {
       return "bg-gray-400 text-white"; // 개발중
     } else {
       return "bg-white text-gray-800"; // 미개발
     }
   }
 
-
   // 진행 상태에 따른 텍스트 반환 함수
   function getStatusText(progress) {
     if (progress === 100) {
-      return "완료";
-    } else if (progress === 50) {
-      return "개발중";
+      return "완료"; // 개발완료
+    } else if (progress > 0) {
+      return "개발중"; // 개발중
     } else {
-      return "미개발";
+      return "미개발"; // 미개발
     }
   }
 });
