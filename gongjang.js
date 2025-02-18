@@ -27,11 +27,10 @@ function createFactoryCard(factory) {
       <div class="flex justify-between items-start">
         <div>
           <h3 class="text-lg font-medium text-gray-900">${factory.name}</h3>
-          <p class="text-sm text-gray-500 mt-1">X: 0 Y: 0 Z: 0</p>
+          <!-- 담당자를 XYZ 위치에 표시 -->
+          <p class="text-sm text-gray-500 mt-1">담당자: ${factory.manager}</p>
         </div>
-        <span class="px-2 py-1 text-sm rounded-full ${getStatusClass(
-          factory.progress
-        )}">${getStatusText(factory.progress)}</span>
+        <span class="px-2 py-1 text-sm rounded-full ${getStatusClass(factory.progress)}">${getStatusText(factory.progress)}</span>
       </div>
       <div class="mt-4">
         <div class="flex justify-between text-sm text-gray-500 mb-1">
@@ -39,9 +38,7 @@ function createFactoryCard(factory) {
           <span>${factory.progress}%</span>
         </div>
         <div class="w-full bg-gray-200 rounded-full h-2">
-          <div class="bg-custom rounded-full h-2" style="width: ${
-            factory.progress
-          }%"></div>
+          <div class="bg-custom rounded-full h-2" style="width: ${factory.progress}%"></div>
         </div>
       </div>
     </div>

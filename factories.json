@@ -1,10 +1,9 @@
 [
-  { "name": "철 공장", "progress": 100 },
-  { "name": "아르마딜로 경험치 공장", "progress": 50 },
-  { "name": "몬스터 타워", "progress": 100 },
-  { "name": "금 공장", "progress": 0 },
-  { "name": "나무 공장", "progress": 0 },
-  { "name": "사탕수수 공장", "progress": 100 },
-  { "name": "슬라임 공장", "progress": 0 }
-
+  { "name": "철 공장", "progress": 100, "manager": "한지호" },
+  { "name": "아르마딜로 경험치 공장", "progress": 50, "manager": "배원우" },
+  { "name": "몬스터 타워", "progress": 100, "manager": "반준영" },
+  { "name": "금 공장", "progress": 0, "manager": "null" },
+  { "name": "나무 공장", "progress": 0, "manager": "null" },
+  { "name": "사탕수수 공장", "progress": 100, "manager": "전동준" },
+  { "name": "슬라임 공장", "progress": 0, "manager": "전동준" }
 ]
