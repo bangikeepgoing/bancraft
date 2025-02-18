@@ -1,0 +1,8 @@
+[
+  { "name": "철 공장", "progress": 100 },
+  { "name": "아르마딜로 경험치 공장", "progress": 50 },
+  { "name": "몬스터 타워", "progress": 100 },
+  { "name": "금 공장", "progress": 0 },
+  { "name": "나무 공장", "progress": 0 },
+  { "name": "사탕수수 공장", "progress": 100 }
+]

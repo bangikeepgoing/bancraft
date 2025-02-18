@@ -1,35 +1,13 @@
-// 좌표 데이터를 배열로 정의
-const coordinates = [
-  { name: "거점", x: 38, y: 64, z: 100, memo: "중앙 거점", type: "overworld" },
-  {
-    name: "바다 신전",
-    x: -4584,
-    y: 0,
-    z: -5182,
-    memo: "바다 신전",
-    type: "overworld",
-  },
-  { name: "알레이", x: 2629, y: 0, z: -471, memo: "알레이", type: "overworld" },
-  {
-    name: "메인 지옥문",
-    x: 0,
-    y: 66,
-    z: 0,
-    memo: "메인 지옥문",
-    type: "nether",
-  },
-  {
-    name: "지옥 바스티온",
-    x: -87,
-    y: 86,
-    z: 140,
-    memo: "바스티온",
-    type: "nether",
-  },
-];
+// 좌표 데이터를 fetch로 가져오는 함수
+function loadCoordinates() {
+  fetch("coordinates.json") // JSON 파일의 경로를 지정
+    .then((response) => response.json()) // JSON 데이터를 파싱
+    .then((coordinates) => renderCoordinates(coordinates)) // 좌표 데이터를 렌더링 함수에 전달
+    .catch((error) => console.error("Error loading coordinates:", error)); // 에러 처리
+}
 
 // 테이블을 동적으로 생성하는 함수
-function renderCoordinates() {
+function renderCoordinates(coordinates) {
   const overworldTableBody = document.querySelector("#overworld"); // 오버월드 테이블 본문 선택
   const netherTableBody = document.querySelector("#nether"); // 네더 테이블 본문 선택
   const endTableBody = document.querySelector("#end"); // 엔더 테이블 본문 선택
@@ -62,5 +40,5 @@ function renderCoordinates() {
   });
 }
 
-// 페이지 로드 시 좌표 정보를 테이블에 렌더링
-document.addEventListener("DOMContentLoaded", renderCoordinates);
+// 페이지 로드 시 좌표 정보를 JSON 파일에서 로드하고 테이블에 렌더링
+document.addEventListener("DOMContentLoaded", loadCoordinates);
