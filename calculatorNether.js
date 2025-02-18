@@ -31,6 +31,6 @@ function convertCoordinates() {
         resultElement.textContent = `오버월드 좌표: X=${newX.toFixed(2)}, Y=${y}, Z=${newZ.toFixed(2)}`;
     }
     
-    resultElement.classList.remove("text-red-400");
-    resultElement.classList.add("text-green-400");
+    resultElement.classList.remove("text-black-400");
+    resultElement.classList.add("text-black-400");
 }
