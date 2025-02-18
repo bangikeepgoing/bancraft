@@ -1,0 +1,18 @@
+/* styles.css */
+@font-face {
+  font-family: "GongGothicMedium";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.0/GongGothicMedium.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: "GongGothicMedium", sans-serif; /* 기본 폰트를 GongGothicMedium으로 설정 */
+}
+
+h1,
+h2,
+p {
+  font-family: "GongGothicMedium", sans-serif; /* 특정 태그에도 적용 가능 */
+}

@@ -56,7 +56,11 @@ function renderCoordinates() {
         <td class="px-6 py-4">${coord.x}</td>
         <td class="px-6 py-4">${coord.y}</td>
         <td class="px-6 py-4">${coord.z}</td>
-        <td class="px-6 py-4">${coord.memo}</td>
+        <td class="px-6 py-4">
+<button class="copy-btn text-sm px-3 py-2 bg-black text-white rounded-lg hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-500">
+  복사
+</button>
+        </td>
       `;
 
     // 좌표의 타입에 따라 해당하는 테이블에 추가
@@ -67,6 +71,15 @@ function renderCoordinates() {
     } else if (coord.type === "end") {
       endTableBody.appendChild(row);
     }
+
+    // 복사 버튼 클릭 이벤트 리스너 추가
+    const copyButton = row.querySelector(".copy-btn");
+    copyButton.addEventListener("click", () => {
+      const coordData = `이름: ${coord.name}, X: ${coord.x}, Y: ${coord.y}, Z: ${coord.z}`;
+      navigator.clipboard.writeText(coordData).then(() => {
+        alert("좌표가 클립보드에 복사되었습니다.");
+      });
+    });
   });
 }
 
