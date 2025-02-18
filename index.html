@@ -23,9 +23,6 @@
       data-border-radius="small"
     ></script>
   </head>
-  <meta property="og:image" content="https://i.namu.wiki/i/vJKBu0UCB0k2eTps1ep8qu0-PAPiJYv83Ldr298bbay0lCrIVJjwhJr5xRhKuTh4zRRsz78ku51KnQ5IT_k-IOGP2h0YBDCIvRts_2tJ5Y0f-yJHgF0fpOK2ZUjLRYi99rhEu4frUhRKDAPwN8fQKw.webp" />
-<meta property="og:image:width" content="1200" />
-<meta property="og:image:height" content="630" />
 
   <body class="bg-gray-50 min-h-screen font-['Noto_Sans_KR']">
     <nav class="bg-white shadow-sm">
@@ -33,14 +30,11 @@
         <div class="flex justify-between h-16">
           <div class="flex items-center">
             <img
-                src="https://i.namu.wiki/i/vJKBu0UCB0k2eTps1ep8qu0-PAPiJYv83Ldr298bbay0lCrIVJjwhJr5xRhKuTh4zRRsz78ku51KnQ5IT_k-IOGP2h0YBDCIvRts_2tJ5Y0f-yJHgF0fpOK2ZUjLRYi99rhEu4frUhRKDAPwN8fQKw.webp"
-               alt="로고"
-               class="h-8 w-auto"
-/>
-
-            <span class="ml-3 text-xl font-bold text-gray-900">
-              햄북스딱스
-            </span>
+              src="https://i.namu.wiki/i/vJKBu0UCB0k2eTps1ep8qu0-PAPiJYv83Ldr298bbay0lCrIVJjwhJr5xRhKuTh4zRRsz78ku51KnQ5IT_k-IOGP2h0YBDCIvRts_2tJ5Y0f-yJHgF0fpOK2ZUjLRYi99rhEu4frUhRKDAPwN8fQKw.webp"
+              alt="로고"
+              class="h-8 w-auto"
+            />
+            <span class="ml-3 text-xl font-bold text-gray-900">햄북스딱스</span>
           </div>
         </div>
       </div>
@@ -83,8 +77,94 @@
                 </th>
               </tr>
             </thead>
-            <tbody class="bg-white divide-y divide-gray-200">
-            <!-- //js에서 입력된 좌표값 생성 -->
+            <tbody id="overworld" class="bg-white divide-y divide-gray-200">
+              <!-- Overworld 좌표 데이터가 여기에 추가됩니다. -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="mb-12">
+        <div class="flex justify-between items-center mb-6">
+          <h2 class="text-2xl font-bold text-gray-900">네더 좌표</h2>
+        </div>
+
+        <div class="bg-white rounded-lg shadow overflow-hidden">
+          <table class="min-w-full divide-y divide-gray-200">
+            <thead class="bg-gray-50">
+              <tr>
+                <th
+                  class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+                >
+                  이름
+                </th>
+                <th
+                  class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+                >
+                  X
+                </th>
+                <th
+                  class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+                >
+                  Y
+                </th>
+                <th
+                  class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+                >
+                  Z
+                </th>
+                <th
+                  class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+                >
+                  메모
+                </th>
+              </tr>
+            </thead>
+            <tbody id="nether" class="bg-white divide-y divide-gray-200">
+              <!-- Nether 좌표 데이터가 여기에 추가됩니다. -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="mb-12">
+        <div class="flex justify-between items-center mb-6">
+          <h2 class="text-2xl font-bold text-gray-900">엔더 좌표</h2>
+        </div>
+
+        <div class="bg-white rounded-lg shadow overflow-hidden">
+          <table class="min-w-full divide-y divide-gray-200">
+            <thead class="bg-gray-50">
+              <tr>
+                <th
+                  class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+                >
+                  이름
+                </th>
+                <th
+                  class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+                >
+                  X
+                </th>
+                <th
+                  class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+                >
+                  Y
+                </th>
+                <th
+                  class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+                >
+                  Z
+                </th>
+                <th
+                  class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+                >
+                  메모
+                </th>
+              </tr>
+            </thead>
+            <tbody id="end" class="bg-white divide-y divide-gray-200">
+              <!-- Ender 좌표 데이터가 여기에 추가됩니다. -->
             </tbody>
           </table>
         </div>
@@ -96,26 +176,12 @@
         </div>
         <div>
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <!-- 철 공장 -->
-            
-            </div>
+            <!-- 추가적인 공장들 -->
           </div>
         </div>
       </div>
-
-      <div class="mb-12">
-        <div class="flex justify-between items-center mb-6">
-          <h2 class="text-2xl font-bold text-gray-900">기타 특이사항</h2>
-        </div>
-
-        <div class="bg-white rounded-lg shadow p-6">
-          <ol class="list-decimal pl-6 text-gray-500">
-
-            <li>새로운 공장을 건설할 때마다 자원이 소모됩니다.</li>
-          </ol>
-        </div>
-      </div>
     </main>
+
     <script src="gongjang.js"></script>
     <script src="xyz.js"></script>
   </body>
