@@ -21,13 +21,13 @@ function renderCoordinates(coordinates) {
   coordinates.forEach((coord) => {
     const row = document.createElement("tr");
 
-    // 테이블 행에 데이터 추가
     row.innerHTML = `
-      <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">${coord.name}</td>
-      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">${coord.x}</td>
-      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">${coord.y}</td>
-      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">${coord.z}</td>
-    `;
+    <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900 font-['GongGothicMedium']">${coord.name}</td>
+    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500 font-['GongGothicMedium']">${coord.x}</td>
+    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500 font-['GongGothicMedium']">${coord.y}</td>
+    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500 font-['GongGothicMedium']">${coord.z}</td>
+  `;
+  
 
     // 좌표의 타입에 따라 해당하는 테이블에 추가
     if (coord.type === "overworld") {

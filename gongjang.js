@@ -23,14 +23,15 @@ function initialize() {
 
 function createFactoryCard(factory) {
   return `
-    <div class="bg-white rounded-lg shadow p-6">
+    <div class="bg-white rounded-lg shadow p-6 font-['GongGothicMedium']">
       <div class="flex justify-between items-start">
         <div>
           <h3 class="text-lg font-medium text-gray-900">${factory.name}</h3>
-          <!-- 담당자를 XYZ 위치에 표시 -->
           <p class="text-sm text-gray-500 mt-1">담당자: ${factory.manager}</p>
         </div>
-        <span class="px-2 py-1 text-sm rounded-full ${getStatusClass(factory.progress)}">${getStatusText(factory.progress)}</span>
+        <span class="px-2 py-1 text-sm rounded-full ${getStatusClass(factory.progress)}">
+          ${getStatusText(factory.progress)}
+        </span>
       </div>
       <div class="mt-4">
         <div class="flex justify-between text-sm text-gray-500 mb-1">
@@ -44,6 +45,7 @@ function createFactoryCard(factory) {
     </div>
   `;
 }
+
 
 // 진행률에 따라 색상을 다르게 반환하는 함수
 function getStatusClass(progress) {
