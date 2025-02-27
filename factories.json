@@ -6,5 +6,8 @@
   { "name": "나무 공장", "progress": 0, "manager": "null" },
   { "name": "사탕수수 공장", "progress": 100, "manager": "전동준" },
   { "name": "슬라임 공장", "progress": 0, "manager": "전동준" },
+  { "name": "주민 공장", "progress": 100, "manager": "반준영" },
+  { "name": "주민 교환소", "progress": 20, "manager": "반준영" },
+  { "name": "소 공장", "progress": 100, "manager": "전동준" },
   { "name": "엔더맨 경험치 공장", "progress": 100, "manager": "배원우" }
 ]
