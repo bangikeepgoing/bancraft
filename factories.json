@@ -1,15 +1,18 @@
 [
   { "name": "철 공장", "progress": 100, "manager": "한지호" },
-  { "name": "아르마딜로 경험치 공장", "progress": 50, "manager": "배원우" },
+  { "name": "아르마딜로 경험치 공장", "progress": 0, "manager": "배원우" },
   { "name": "몬스터 타워", "progress": 100, "manager": "반준영" },
-  { "name": "금 공장", "progress": 0, "manager": "null" },
-  { "name": "나무 공장", "progress": 0, "manager": "null" },
+  { "name": "금 공장", "progress": 90, "manager": "전동준" },
+  { "name": "나무 공장", "progress": 100, "manager": "반준영" },
   { "name": "사탕수수 공장", "progress": 100, "manager": "전동준" },
-  { "name": "슬라임 공장", "progress": 0, "manager": "전동준" },
   { "name": "주민 번식 공장", "progress": 100, "manager": "반준영" },
-  { "name": "주민 교환소", "progress": 30, "manager": "반준영" },
+  { "name": "주민 교환소", "progress": 100, "manager": "반준영" },
   { "name": "소 공장", "progress": 100, "manager": "전동준" },
   { "name": "크리퍼 공장", "progress": 0, "manager": "null" },
-  { "name": "켈프 공장", "progress": 0, "manager": "null" },
-  { "name": "엔더맨 경험치 공장", "progress": 100, "manager": "배원우" }
+  { "name": "켈프 공장", "progress": 100, "manager": "반준영" },
+  { "name": "레이드 공장", "progress": 100, "manager": "반준영" },
+  { "name": "화로 공장", "progress": 30, "manager": "반준영" },
+  { "name": "4배 철 공장", "progress": 100, "manager": "반준영" },
+  { "name": "엔더맨 경험치 공장", "progress": 100, "manager": "배원우" },
+  { "name": "흉조 포션 공장", "progress": 0, "manager": "배원우" }
 ]
