@@ -16,7 +16,7 @@
   { "name": "흉조 포션 공장", "progress": 100, "manager": "배원우" },
   { "name": "수박, 호박 공장", "progress": 50, "manager": "반준영" },
   { "name": "가디언 공장", "progress": 0, "manager": "null" },
-  { "name": "모래, 콘크리트 복사 공장", "progress": 0, "manager": "반준영" },
-  { "name": "TNT 채굴기", "progress": 0, "manager": "반준영" },
+  { "name": "모래, 콘크리트 복사 공장(싱글용)", "progress": 100, "manager": "반준영" },
+  { "name": "TNT 채굴기", "progress": 100, "manager": "반준영" },
   { "name": "양봉", "progress": 0, "manager": "null" }
 ]
